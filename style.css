@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  width: 90%;
+}
+
+.brand {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  margin-bottom: 22px;
+}
+
+.brand span {
+  color: #06C167;
+}
+
+.hero-content h1 {
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 1.14;
+}
+
+.subtitle {
+  margin-top: 26px;
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+.stores {
+  margin-top: 34px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.stores img {
+  height: 80px;
+  width: 160px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 28px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+  z-index: 2;
+  font-size: 14px;
+}
+
+/* ================= BETTER FOOD ================= */
+
+.better-food {
+  position: relative;
+  background: #fff;
+  padding: 120px 20px 140px;
+  overflow: hidden;
+}
+
+.better-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.better-content h2 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #ef4f5f;
+  line-height: 1.2;
+}
+
+.better-content p {
+  margin-top: 22px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CURVE — ONLY ONE, BELOW HEADING */
+.bg-curve {
+  width: 100%;
+  height: 60px;
+  margin: 16px 0 28px;
+  opacity: 0.85;
+}
+
+/* FLOATING FOOD (WHITE SECTION ONLY) */
+.food {
+  position: absolute;
+  pointer-events: none;
+  filter: drop-shadow(0 14px 22px rgba(0,0,0,0.12));
+  z-index: 1;
+}
+
+.burger {
+  width: 140px;
+  left: 5%;
+  top: 45%;
+}
+
+.pizza {
+  width: 150px;
+  right: 5%;
+  top: 55%;
+}
+
+.rolls {
+  width: 120px;
+  right: 18%;
+  top: 22%;
+}
+
+.leaf {
+  width: 44px;
+  left: 50%;
+  top: 18%;
+  transform: translateX(-50%);
+}
+
+/* STATS */
+.stats {
+  margin: 90px auto 0;
+  max-width: 820px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 26px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  z-index: 2;
+  position: relative;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.stat span {
+  font-size: 14px;
+  color: #888;
+}
+
+.divider {
+  width: 1px;
+  height: 45px;
+  background: #eee;
+}
+/* ================= APP FEATURES (PINK) ================= */
+
+.app-features {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: #fff2f4;
+  padding: 160px 20px 200px;
+  text-align: center;
+  position: relative;
+}
+
+.app-features h2 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #ef4f5f;
+}
+
+.app-features p {
+  margin-top: 22px;
+  font-size: 16px;
+  color: #666;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* THIS IS THE CANVAS */
+.features-wrap {
+  position: relative;
+  margin-top: 120px;
+  height: 520px;
+}
+
+/* CENTER PHONE */
+.phone {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone img {
+  width: 260px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 30px;
+  box-shadow: 0 26px 50px rgba(0,0,0,0.16);
+}
+
+/* REMOVE GRID FEEL */
+.features {
+  position: absolute;
+  display: block;
+}
+
+/* FEATURE CARD */
+.feature-card {
+  position: absolute;
+  background: #fff;
+  width: 128px;
+  height: 128px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 12px 26px rgba(0,0,0,0.08);
+}
+
+.feature-card img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.feature-card span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* LEFT SIDE — SCATTERED */
+.features:first-child {
+  left: 18%;
+  top: 6%;
+}
+
+.features:first-child .feature-card:nth-child(1) {
+  top: 0;
+  left: 40px;
+}
+
+.features:first-child .feature-card:nth-child(2) {
+  top: 140px;
+  left: -10px;
+}
+
+.features:first-child .feature-card:nth-child(3) {
+  top: 300px;
+  left: 60px;
+}
+
+.features:first-child .feature-card:nth-child(4) {
+  top: 430px;
+  left: 10px;
+}
+
+/* RIGHT SIDE — SCATTERED */
+.features:last-child {
+  right: 18%;
+  top: 6%;
+}
+
+.features:last-child .feature-card:nth-child(1) {
+  top: 0;
+  right: 40px;
+}
+
+.features:last-child .feature-card:nth-child(2) {
+  top: 140px;
+  right: -10px;
+}
+
+.features:last-child .feature-card:nth-child(3) {
+  top: 300px;
+  right: 60px;
+}
+
+.features:last-child .feature-card:nth-child(4) {
+  top: 430px;
+  right: 10px;
+}
+/* ================= GLOBAL SCALE BOOST ================= */
+
+body {
+  font-size: 18px;
+}
+
+/* ================= BETTER FOOD SCALE ================= */
+
+.better-food {
+  padding: 160px 20px 180px;
+}
+
+.better-content {
+  max-width: 820px;
+}
+
+.better-content h2 {
+  font-size: 60px;
+}
+
+.better-content p {
+  font-size: 20px;
+}
+
+/* floating food slightly bigger */
+.burger { width: 165px; }
+.pizza  { width: 175px; }
+.rolls  { width: 135px; }
+.leaf   { width: 52px; }
+
+/* stats bigger */
+.stats {
+  max-width: 920px;
+  padding: 34px 48px;
+}
+
+.stat strong {
+  font-size: 30px;
+}
+
+.stat span {
+  font-size: 15px;
+}
+
+/* ================= APP FEATURES SCALE ================= */
+
+.app-features {
+  padding: 200px 20px 240px;
+}
+
+.app-features h2 {
+  font-size: 58px;
+}
+
+.app-features p {
+  font-size: 18px;
+  max-width: 620px;
+}
+
+.features-wrap {
+  margin-top: 140px;
+  height: 620px;
+}
+
+/* phone bigger */
+.phone img {
+  width: 300px;
+  padding: 36px;
+  border-radius: 34px;
+}
+
+/* feature cards bigger */
+.feature-card {
+  width: 148px;
+  height: 148px;
+  border-radius: 26px;
+}
+
+.feature-card img {
+  width: 48px;
+  height: 48px;
+}
+
+.feature-card span {
+  font-size: 14px;
+}
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #000;
+  color: #aaa;
+  padding: 120px 60px 60px;
+}
+
+.footer-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+  gap: 60px;
+}
+
+.footer-logo {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.footer-logo span {
+  color: #06C167;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.footer-col a {
+  display: block;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+/* SOCIAL ICONS */
+.socials {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.socials span {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* APP BUTTONS */
+.footer-stores img {
+  width: 150px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  max-width: 1300px;
+  margin: 60px auto 0;
+  padding-top: 26px;
+  border-top: 1px solid #222;
+  font-size: 12px;
+  color: #666;
+}
+
+.footer-bottom p {
+  margin-bottom: 8px;
+}
