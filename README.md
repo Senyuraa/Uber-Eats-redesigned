@@ -1,4 +1,8 @@
 # Uber Eats — Reimagined UI
+<p align="center">
+  <img src="4.png" width="800">
+</p>
+
 
 This project is a **redefined and reimagined frontend UI** inspired by modern food delivery platforms.
 
