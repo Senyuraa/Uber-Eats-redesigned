@@ -1,6 +1,6 @@
 # Uber Eats — Reimagined UI
 <p align="center">
-  <img src="4.png" width="800">
+  <img src="4.png" width="600">
 </p>
 
 
